@@ -1,6 +1,6 @@
 services:
   lvgl-compile-server:
-    image: ik8share/lvgl-compile-server:v261125b1
+    image: ik8share/lvgl-compile-server:latest
     container_name: lvgl-compile-server-single
     restart: unless-stopped
     environment:
@@ -8,7 +8,7 @@ services:
     ports:
       - "3001"
   lvgl-simulator:
-    image: ik8share/lvgl-simulator:v261125b1
+    image: ik8share/lvgl-simulator:latest
     container_name: lvgl-simulator-single
     restart: unless-stopped
     environment:
